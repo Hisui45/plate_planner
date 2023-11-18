@@ -5,7 +5,9 @@
         android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/Theme.PlatePlanner"
         tools:targetApi="31"
-        android:name=".PlateApplication">
+        android:name=".PlateApplication"
+        android:usesCleartextTraffic="true"
+        >
         <activity android:name=".MainActivity" android:exported="true" android:label="@string/app_name"
             android:theme="@style/Theme.PlatePlanner">
             <intent-filter>
@@ -16,6 +18,8 @@
 
             <meta-data android:name="android.app.lib_name" android:value="" />
         </activity>
-    </application>
 
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

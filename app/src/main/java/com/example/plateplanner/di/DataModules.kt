@@ -22,6 +22,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.json.JSONArray
+import timber.log.Timber
 import javax.inject.Singleton
 
 @Module
@@ -88,7 +89,9 @@ object DatabaseModule {
             val userList: JSONArray =
                 context.resources.openRawResource(R.raw.recipes).bufferedReader().use {
                     JSONArray(it.readText())
+
                 }
+
             val recipeList: MutableList<LocalRecipe> = mutableListOf()
             userList.takeIf { it.length() > 0 }?.let { list ->
                 for (index in 0 until list.length()) {
@@ -96,8 +99,8 @@ object DatabaseModule {
 
                     recipeList.add(
                         LocalRecipe(
-                            id = recipeObj.getString("id"),
-                            title = recipeObj.getString("")
+                            id = index.toString(),
+                            title = recipeObj.getString("Name")
                         )
                     )
 
