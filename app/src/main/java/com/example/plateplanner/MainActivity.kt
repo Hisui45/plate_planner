@@ -9,6 +9,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.plateplanner.ui.discover.DiscoverScreen
 import com.example.plateplanner.ui.theme.PlatePlannerTheme
 
 class MainActivity : ComponentActivity() {

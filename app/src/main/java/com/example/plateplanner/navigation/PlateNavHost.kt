@@ -1,4 +1,4 @@
-package com.example.plateplanner
+package com.example.plateplanner.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
