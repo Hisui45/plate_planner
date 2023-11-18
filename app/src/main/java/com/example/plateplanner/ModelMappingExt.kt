@@ -14,16 +14,8 @@ import com.example.plateplanner.model.Recipe
 
     // Local to External
     fun LocalRecipe.toExternalRecipe() = Recipe(
-//        id = id,
-//        title = title,
-//        rooms = rooms,
-//        routineInfo = routineInfo,
-//        isTimeModeActive = isTimeModeActive,
-//        timerModeValue = timerModeValue,
-//        timerOption = timerOption,
-//        isBankModeActive = isBankModeActive,
-//        bankModeValue = bankModeValue,
-//        isFavorite = isFavorite
+        id = id,
+        title = title,
     )
 
     // Note: JvmName is used to provide a unique name for each extension function with the same name.

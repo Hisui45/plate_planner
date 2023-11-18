@@ -63,15 +63,15 @@ interface RecipeDao {
     @Upsert
     suspend fun upsertAllRecipes(recipes: List<LocalRecipe>)
 
-    /**
-     * Update the favorite status of a recipe
-     *
-     * @param recipeId id of the recipe
-     * @param favorite status to be updated
-     */
-
-    @Query("UPDATE recipe SET isFavorite = :favorite WHERE id = :recipeId")
-    suspend fun updateFavorite(recipeId: String, favorite: Boolean)
+//    /**
+//     * Update the favorite status of a recipe
+//     *
+//     * @param recipeId id of the recipe
+//     * @param favorite status to be updated
+//     */
+//
+//    @Query("UPDATE recipe SET isFavorite = :favorite WHERE id = :recipeId")
+//    suspend fun updateFavorite(recipeId: String, favorite: Boolean)
 
     /**
      * Delete a recipe by id.

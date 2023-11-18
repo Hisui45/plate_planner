@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PlatePlanner</string>
+    <string name="error_recipes" />
+    <string name="error_recipe">There was a problem loading the recipes</string>
 </resources>

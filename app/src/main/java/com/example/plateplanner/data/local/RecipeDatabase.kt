@@ -7,7 +7,7 @@ import com.example.plateplanner.data.Converters
 
 @Database(entities = [LocalRecipe::class], version = 1, exportSchema = false)
 
-@TypeConverters(Converters::class)
+//@TypeConverters(Converters::class)
 abstract class RecipeDatabase : RoomDatabase() {
     abstract fun recipeDao(): RecipeDao
 

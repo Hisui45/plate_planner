@@ -109,15 +109,15 @@ class DefaultRecipeRepository @Inject constructor(
         return localDataSource.getRecipeById(recipeId)?.toExternalRecipe()
     }
 
-    override suspend fun favoriteRecipe(recipeId: String) {
-        localDataSource.updateFavorite(recipeId = recipeId, favorite = true)
-//        saveRecipesToNetwork()
-    }
-
-    override suspend fun unFavoriteRecipe(recipeId: String) {
-        localDataSource.updateFavorite(recipeId = recipeId, favorite = false)
-//        saveRecipesToNetwork()
-    }
+//    override suspend fun favoriteRecipe(recipeId: String) {
+//        localDataSource.updateFavorite(recipeId = recipeId, favorite = true)
+////        saveRecipesToNetwork()
+//    }
+//
+//    override suspend fun unFavoriteRecipe(recipeId: String) {
+//        localDataSource.updateFavorite(recipeId = recipeId, favorite = false)
+////        saveRecipesToNetwork()
+//    }
 
     override suspend fun deleteAllRecipes() {
         localDataSource.deleteAllRecipes()

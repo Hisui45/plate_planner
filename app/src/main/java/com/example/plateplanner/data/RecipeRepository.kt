@@ -27,9 +27,9 @@ interface RecipeRepository {
         choreId: String, title: String
     )
 
-    suspend fun favoriteRecipe(choreId: String)
-
-    suspend fun unFavoriteRecipe(choreId: String)
+//    suspend fun favoriteRecipe(choreId: String)
+//
+//    suspend fun unFavoriteRecipe(choreId: String)
 
     suspend fun deleteAllRecipes()
 
